@@ -1,0 +1,3 @@
+## 2024-05-28 - Missing `htmlFor` Attributes in the Marketing Setup Form
+**Learning:** Found multiple instances where form `<label>` elements were missing the `htmlFor` attribute that binds them to their corresponding input elements. Without this, clicking the label doesn't focus the input and screen readers struggle to associate the label with the input correctly.
+**Action:** Always ensure that every form input/select has an `id` attribute, and its accompanying `<label>` has an `htmlFor` attribute that matches that `id`. Adding `cursor-pointer` to both elements improves visual interactive affordance.

@@ -172,9 +172,10 @@ export default function App() {
 
               <div className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-1.5">Target Audience</label>
+                  <label htmlFor="targetAudience" className="block text-sm font-medium text-slate-700 mb-1.5 cursor-pointer">Target Audience</label>
                   <select 
-                    className="w-full bg-slate-50 border border-slate-200 text-slate-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block p-2.5 outline-none transition-shadow hover:bg-white"
+                    id="targetAudience"
+                    className="w-full bg-slate-50 border border-slate-200 text-slate-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block p-2.5 outline-none transition-shadow hover:bg-white cursor-pointer"
                     value={targetAudience}
                     onChange={e => setTargetAudience(e.target.value)}
                   >
@@ -183,9 +184,10 @@ export default function App() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-1.5">Medium Focus</label>
+                  <label htmlFor="mediumFocus" className="block text-sm font-medium text-slate-700 mb-1.5 cursor-pointer">Medium Focus</label>
                   <select 
-                    className="w-full bg-slate-50 border border-slate-200 text-slate-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block p-2.5 outline-none transition-shadow hover:bg-white"
+                    id="mediumFocus"
+                    className="w-full bg-slate-50 border border-slate-200 text-slate-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block p-2.5 outline-none transition-shadow hover:bg-white cursor-pointer"
                     value={medium}
                     onChange={e => setMedium(e.target.value)}
                   >
@@ -194,9 +196,10 @@ export default function App() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-1.5">Visual Style</label>
+                  <label htmlFor="visualStyle" className="block text-sm font-medium text-slate-700 mb-1.5 cursor-pointer">Visual Style</label>
                   <select 
-                    className="w-full bg-slate-50 border border-slate-200 text-slate-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block p-2.5 outline-none transition-shadow hover:bg-white"
+                    id="visualStyle"
+                    className="w-full bg-slate-50 border border-slate-200 text-slate-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block p-2.5 outline-none transition-shadow hover:bg-white cursor-pointer"
                     value={style}
                     onChange={e => setStyle(e.target.value)}
                   >
